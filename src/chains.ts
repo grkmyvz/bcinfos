@@ -1,16 +1,18 @@
 export type IChainData = {
-  [key: number]: {
-    chainId: number;
-    chainIdHex: string;
-    name: string;
-    currencyName: string;
-    currencySymbol: string;
-    blockExplorerUrl: string;
-    rpcUrl: string | null;
-  };
+  chainId: number;
+  chainIdHex: string;
+  name: string;
+  currencyName: string;
+  currencySymbol: string;
+  blockExplorerUrl: string;
+  rpcUrl: string | null;
 };
 
-export const ChainData: IChainData = {
+export type IChains = {
+  [key: number]: IChainData;
+};
+
+export const ChainData: IChains = {
   1: {
     chainId: 1,
     chainIdHex: "0x1",
@@ -89,7 +91,7 @@ export const ChainData: IChainData = {
     name: "Avalanche C-Chain",
     currencyName: "Avalanche",
     currencySymbol: "AVAX",
-    blockExplorerUrl: "https://snowtrace.io/",
+    blockExplorerUrl: "https://snowtrace.io",
     rpcUrl: null,
   },
   43113: {
@@ -98,7 +100,7 @@ export const ChainData: IChainData = {
     name: "Avalanche FUJI C-Chain",
     currencyName: "Avalanche",
     currencySymbol: "AVAX",
-    blockExplorerUrl: "https://testnet.snowtrace.io/",
+    blockExplorerUrl: "https://testnet.snowtrace.io",
     rpcUrl: null,
   },
   250: {
@@ -116,7 +118,7 @@ export const ChainData: IChainData = {
     name: "Fantom Testnet",
     currencyName: "Fantom",
     currencySymbol: "FTM",
-    blockExplorerUrl: "https://testnet.ftmscan.com/",
+    blockExplorerUrl: "https://testnet.ftmscan.com",
     rpcUrl: null,
   },
 };

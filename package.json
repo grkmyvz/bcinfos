@@ -1,6 +1,6 @@
 {
   "name": "bcinfos",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Blockchain Infos",
   "types": "./lib/bcinfos.d.ts",
   "main": "./lib/bcinfos.js",
