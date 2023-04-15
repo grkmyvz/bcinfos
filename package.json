@@ -2,9 +2,11 @@
   "name": "bcinfos",
   "version": "0.0.1",
   "description": "Blockchain Infos",
-  "main": "index.js",
+  "types": "./lib/bcinfos.d.ts",
+  "main": "./lib/bcinfos.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm ./lib/* && tsc"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,9 @@
   ],
   "author": "Görkem YAVUZ",
   "license": "MIT",
+  "files": [
+    "lib"
+  ],
   "bugs": {
     "url": "https://github.com/grkmyvz/bcinfos/issues"
   },
