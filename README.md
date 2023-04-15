@@ -39,7 +39,7 @@ import { getChainList, getChainData, setRpcUrl } from "bcinfos";
 ```javascript
 const chainList = getChainList();
 console.log(chainList);
-// [1, 5, 42161, 10, 137, 100, 56, 97, 43114, 43113, 250, 4002]
+// [1, 5, 42161, 10, 137, 100, 56, 97, 43114, 43113, 250, 4002, 42220]
 ```
 
 ### Fetching chain getChainData
@@ -63,7 +63,7 @@ rpcUrl: null,
 ### Setting an RPC URL for a chain
 
 ```javascript
-setRpcUrl(1, "https://mainnet.infura.io/v3/your-api-key");
+setRpcUrl(1, "https://your-rpc-url");
 const chainData = getChainData(1);
 console.log(chainData.rpcUrl);
 // https://your-rpc-url

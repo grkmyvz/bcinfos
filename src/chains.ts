@@ -121,4 +121,13 @@ export const ChainData: IChains = {
     blockExplorerUrl: "https://testnet.ftmscan.com",
     rpcUrl: null,
   },
+  42220: {
+    chainId: 42220,
+    chainIdHex: "0xa4ec",
+    name: "Celo Mainnet",
+    currencyName: "Celo",
+    currencySymbol: "CELO",
+    blockExplorerUrl: "https://explorer.celo.org/mainnet",
+    rpcUrl: null,
+  },
 };
